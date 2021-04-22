@@ -32,8 +32,9 @@ services:
 
   db:
     image: mysql
-#    env_file:
-#      - ./myproject/.env # 使用了环境变量文件
+    environment:
+      - MYSQL_DATABASE=dockerdemo # 数据库名称
+      - MYSQL_ROOT_PASSWORD=12345678 # 数据库密码
     networks:
       - db_network
     volumes:
