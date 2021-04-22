@@ -53,7 +53,7 @@ services:
       - ./dockerdemo:/pythonpro # 挂载项目代码
       - static_vol:/pythonpro/static # 以数据卷挂载容器内static文件
       - media_vol:/pythonpro/media # 以数据卷挂载容器内用户上传媒体文件
-      - ./compose/uwsgi:/tmp # 挂载uwsgi日志
+      - /tmp/logs:/tmp # 挂载uwsgi日志
     networks:
       - nginx_network
       - db_network
