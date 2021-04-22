@@ -73,14 +73,8 @@ WSGI_APPLICATION = 'dockerdemo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # mysql驱动
-        'NAME': 'dockerdemo',  # 数据库名称
-        'USER': 'root',  # 登录帐号
-        'PASSWORD': '12345678',  # 登录密码
-        'HOST': 'db',  # 主机地址（容器部署）
-        # 'HOST': '127.0.0.1', # 主机地址
-        'PORT': '3306',  # 端口
-        'OPTIONS': {'charset': 'utf8mb4'},
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
     }
 }
 
