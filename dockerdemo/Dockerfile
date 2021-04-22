@@ -16,7 +16,7 @@ WORKDIR /pythonpro
 ADD . /pythonpro
 
 # 利用 pip 安装依赖（- i 表示指定清华源，默认源下载过慢）
-RUN pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
+#RUN pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
 
 #设置环境变量
 ENV SPIDER=/pythonpro
