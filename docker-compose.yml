@@ -74,8 +74,8 @@ services:
     expose:
       - "80"
     volumes:
-      - ./compose/nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf # 挂载nginx配置文件
-      - ./compose/nginx/ssl:/usr/share/nginx/ssl # 挂载ssl证书目录
+#      - ./compose/nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf # 挂载nginx配置文件
+#      - ./compose/nginx/ssl:/usr/share/nginx/ssl # 挂载ssl证书目录
       - ./compose/nginx/log:/var/log/nginx # 挂载日志
       - static_vol:/usr/share/nginx/html/static # 挂载静态文件
       - media_vol:/usr/share/nginx/html/media # 挂载用户上传媒体文件
