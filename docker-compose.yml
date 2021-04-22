@@ -52,8 +52,8 @@ services:
       - "8000"
     volumes:
       - ./dockerdemo:/pythonpro # 挂载项目代码
-      - static_vol:/pythonpro/static # 以数据卷挂载容器内static文件
-      - media_vol:/pythonpro/media # 以数据卷挂载容器内用户上传媒体文件
+#      - static_vol:/pythonpro/static # 以数据卷挂载容器内static文件
+#      - media_vol:/pythonpro/media # 以数据卷挂载容器内用户上传媒体文件
       - /tmp/logs:/tmp # 挂载uwsgi日志
     command: bash start.sh
     networks:
